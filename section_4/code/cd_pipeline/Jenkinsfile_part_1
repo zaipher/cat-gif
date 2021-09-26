@@ -37,7 +37,7 @@ def deploy(environment) {
 		containerName = "app_dev"
 		port = "8888"
 	} 
-	if ("${environment}" == 'staging') {
+	else if ("${environment}" == 'staging') {
 		containerName = "app_staging"
 		port = "88"
 	} 

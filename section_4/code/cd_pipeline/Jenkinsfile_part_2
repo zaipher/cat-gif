@@ -78,5 +78,6 @@ def runUnittests() {
 
 
 def runUAT(port) {
+	sh "chmod +x section_4/code/cd_pipeline/tests/runUAT.sh" 
 	sh "section_4/code/cd_pipeline/tests/runUAT.sh ${port}"
 }
